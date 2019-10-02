@@ -1,6 +1,7 @@
 {
   "name": "@pijma/button",
   "version": "0.0.0",
+  "private": false,
   "description": "Pijma button component",
   "main": "target/es5/index.js",
   "source": "target/ts/index.ts",

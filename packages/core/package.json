@@ -1,6 +1,7 @@
 {
   "name": "@pijma/core",
   "version": "0.0.0",
+  "private": false,
   "description": "Pijma core module",
   "main": "target/es5/index.js",
   "source": "target/ts/index.ts",
