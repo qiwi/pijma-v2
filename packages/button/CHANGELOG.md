@@ -1,3 +1,13 @@
+## @pijma/button [1.1.2](https://github.com/qiwi/pijma-v2/compare/@pijma/button@1.1.1...@pijma/button@1.1.2) (2019-10-02)
+
+
+
+
+
+### Dependencies
+
+* **@pijma/core:** upgraded to 1.0.1
+
 ## @pijma/button [1.1.1](https://github.com/qiwi/pijma-v2/compare/@pijma/button@1.1.0...@pijma/button@1.1.1) (2019-10-02)
 
 
