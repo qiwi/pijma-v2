@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./packages",
+    "paths": {
+      "core": ["./core/src/main/ts"],
+      "core/*": ["./core/src/main/ts/*"],
+      "button": ["./button/src/main/ts"],
+      "button/*": ["./button/src/main/ts/*"]
+    }
+  }
+}
