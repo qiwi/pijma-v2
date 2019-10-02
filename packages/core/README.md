@@ -1,1 +1,3 @@
 # @pijma/core
+
+Test release
