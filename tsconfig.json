@@ -3,10 +3,10 @@
   "compilerOptions": {
     "baseUrl": "./packages",
     "paths": {
-      "core": ["./core/src/main/ts"],
-      "core/*": ["./core/src/main/ts/*"],
-      "button": ["./button/src/main/ts"],
-      "button/*": ["./button/src/main/ts/*"]
+      "@pijma/core": ["./core/src/main/ts"],
+      "@pijma/core/*": ["./core/src/main/ts/*"],
+      "@pijma/button": ["./button/src/main/ts"],
+      "@pijma/button/*": ["./button/src/main/ts/*"]
     }
   }
 }
