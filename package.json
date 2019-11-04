@@ -7,6 +7,7 @@
   "private": true,
   "scripts": {
     "clean": "lerna clean --yes && lerna run clean",
+    "prebuild": "tsc -b packages/button/tsconfig.es5.json",
     "build": "yarn clean && lerna run build --stream --concurrency 1",
     "bootstrap": "lerna bootstrap",
     "jest": "jest",
@@ -36,7 +37,7 @@
     "jest": "^24.9.0",
     "lerna": "^3.16.4",
     "lodash": "^4.17.15",
-    "multi-semantic-release": "^1.1.1",
+    "@qiwi/multi-semantic-release": "^1.2.0",
     "replace-in-file": "^4.1.3",
     "semantic-release": "15.13.24",
     "snazzy": "^8.0.0",
