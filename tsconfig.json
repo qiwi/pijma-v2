@@ -4,9 +4,7 @@
     "baseUrl": "./packages",
     "paths": {
       "@pijma/core": ["./core/src/main/ts"],
-      "@pijma/core/*": ["./core/src/main/ts/*"],
-      "@pijma/button": ["./button/src/main/ts"],
-      "@pijma/button/*": ["./button/src/main/ts/*"]
+      "@pijma/button": ["./button/src/main/ts"]
     }
   }
 }

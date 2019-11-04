@@ -5,10 +5,17 @@
   "description": "Pijma core module",
   "main": "target/es5/index.js",
   "source": "target/ts/index.ts",
-  "types": "typings/index.d.ts",
+  "types": "target/es5/index.d.ts",
   "typescript": {
-    "definition": "typings/index.d.ts"
+    "definition": "target/es5/index.d.ts"
   },
+  "files": [
+    "README.md",
+    "CHANGELOG.md",
+    "target",
+    "typings",
+    "flow-typed"
+  ],
   "scripts": {
     "test": "yarn lint && yarn test:spec",
     "test:gen": "yarn jest --updateSnapshot",
@@ -22,7 +29,7 @@
     "build:es6": "mkdir -p target/es6 && tsc -p tsconfig.es6.json",
     "build:ts": "cp -r src/main/ts/ target/ts/",
     "build:bundle": "microbundle build src/main/ts/index.ts -o target/bundle",
-    "dtsgen": "dts-generator --project ./ --out typings/index.d.ts --prefix @pijma/core/target/es5 --name @pijma/core --main @pijma/core/target/es5/index --moduleResolution node",
+    "dtsgen": "dts-generator --project ./ --out typings/index.d.ts --prefix @pijma/core/target/es5 --name @pijma/core --main @pijma/core/target/es5/index",
     "flowgen": "flowgen typings/index.d.ts --output-file flow-typed/index.flow.js",
     "libdef": "yarn dtsgen && yarn libdeffix && yarn flowgen",
     "libdeffix": "node -r esm ../../scripts/js/libdef-fix.js --dts=./typings/index.d.ts",
@@ -33,11 +40,6 @@
     "uglify": "for f in $(find target -name '*.js'); do short=${f%.js}; terser -c -m -o $short.js -- $f; done",
     "postupdate": "yarn && yarn build && yarn test"
   },
-  "files": [
-    "README.md",
-    "CHANGELOG.md",
-    "target"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/qiwi/pijma-v2.git"
