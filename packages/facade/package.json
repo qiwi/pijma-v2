@@ -2,6 +2,9 @@
   "name": "@pijma/facade",
   "version": "1.0.0",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Pijma facade",
   "main": "target/es5/index.js",
   "source": "target/ts/index.ts",

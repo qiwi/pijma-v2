@@ -2,6 +2,9 @@
   "name": "@pijma/button",
   "version": "1.2.0",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Pijma button component",
   "main": "target/es5/index.js",
   "source": "target/ts/index.ts",
