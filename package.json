@@ -14,7 +14,7 @@
     "test:report": "yarn test && yarn codeclimate:push && yarn coveralls:push",
     "test": "lerna run test --concurrency 1 --stream --no-prefix && yarn coverage:merge",
     "coverage:merge": "node scripts/js/coverage-merge.js",
-    "codeclimate:push": "codeclimate-test-reporter < ./coverage/lcov.info",
+    "codeclimate:push": "codeclimate-test-reporter < ./coverage/lcov.info  || echo 'codeclimate push failed :(' && exit 0",
     "coveralls:push": "cat ./coverage/lcov.info | coveralls || echo 'coveralls push failed :(' && exit 0",
     "docs": "typedoc packages/**/src/main --ignoreCompilerErrors || exit 0",
     "postupdate": "yarn && yarn bootstrap && yarn build && yarn test",
