@@ -1,0 +1,16 @@
+{
+  "name": "@pijma/button",
+  "mode": "modules",
+  "out": "./docs",
+  "target": "ES6",
+  "tsconfig": "tsconfig.json",
+  "exclude": ["test", "node_modules", "paralleljs"],
+  "externalPattern": "**/node_modules/**",
+  "excludePrivate": true,
+  "excludeNotExported": true,
+  "moduleResolution": "node",
+  "module": "commonjs",
+  "hideGenerator": true,
+  "readme": "README.md",
+  "ignoreCompilerErrors": true
+}
