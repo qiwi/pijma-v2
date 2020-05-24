@@ -1,3 +1,10 @@
+## @pijma/core [1.1.1](https://github.com/qiwi/pijma-v2/compare/@pijma/core@1.1.0...@pijma/core@1.1.1) (2020-05-24)
+
+
+### Performance Improvements
+
+* make packages public ([dfdab35](https://github.com/qiwi/pijma-v2/commit/dfdab35530c316a0502fdb1b508c88a5da8a59ac))
+
 # @pijma/core [1.1.0](https://github.com/qiwi/pijma-v2/compare/@pijma/core@1.0.2...@pijma/core@1.1.0) (2020-05-24)
 
 
