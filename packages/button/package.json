@@ -1,6 +1,6 @@
 {
   "name": "@pijma/button",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -13,7 +13,7 @@
     "definition": "target/es5/index.d.ts"
   },
   "dependencies": {
-    "@pijma/core": "1.1.0"
+    "@pijma/core": "1.1.1"
   },
   "files": [
     "README.md",
