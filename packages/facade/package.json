@@ -1,16 +1,13 @@
 {
-  "name": "@pijma/button",
-  "version": "1.1.3",
+  "name": "@pijma/facade",
+  "version": "0.0.0",
   "private": false,
-  "description": "Pijma button component",
+  "description": "Pijma facade",
   "main": "target/es5/index.js",
   "source": "target/ts/index.ts",
   "types": "target/es5/index.d.ts",
   "typescript": {
     "definition": "target/es5/index.d.ts"
-  },
-  "dependencies": {
-    "@pijma/core": "^1.0.2"
   },
   "files": [
     "README.md",
@@ -32,7 +29,7 @@
     "build:es6": "mkdir -p target/es6 && tsc -p tsconfig.es6.json",
     "build:ts": "cp -r src/main/ts/ target/ts/",
     "build:bundle": "microbundle build src/main/ts/index.ts -o target/bundle",
-    "build:libdef": "dts-generator --project ./ --out typings/index.d.ts --prefix @pijma/button/target/es5 --name @pijma/button --main @pijma/button/target/es5/index && libdeffix --dts=./typings/index.d.ts --prefix=@pijma/button/target/es5 && flowgen typings/index.d.ts --output-file flow-typed/index.flow.js",
+    "build:libdef": "dts-generator --project ./ --out typings/index.d.ts --prefix @pijma/facade/target/es5 --name @pijma/facade --main @pijma/facade/target/es5/index && libdeffix --dts=./typings/index.d.ts --prefix=@pijma/facade/target/es5 && flowgen typings/index.d.ts --output-file flow-typed/index.flow.js",
     "docs": "typedoc --readme README.md --tsconfig tsconfig.json src/main --ignoreCompilerErrors || exit 0",
     "uglify": "for f in $(find target -name '*.js'); do short=${f%.js}; terser -c -m -o $short.js -- $f; done",
     "postupdate": "yarn && yarn build && yarn test"
@@ -47,9 +44,10 @@
   "bugs": {
     "url": "https://github.com/qiwi/pijma-v2/issues"
   },
-  "homepage": "https://github.com/qiwi/pijma-v2#readme",
-  "author": "QIWI <opensource@qiwi.com>",
-  "license": "MIT",
+  "dependencies": {
+    "@pijma/core": "^1.0.2",
+    "@pijma/button": "^1.1.3"
+  },
   "devDependencies": {
     "@qiwi/libdefkit": "^1.0.2",
     "@semantic-release/changelog": "^5.0.1",
@@ -86,5 +84,8 @@
       "@semantic-release/npm",
       "@semantic-release/github"
     ]
-  }
+  },
+  "homepage": "https://github.com/qiwi/pijma-v2#readme",
+  "author": "QIWI <opensource@qiwi.com>",
+  "license": "MIT"
 }
