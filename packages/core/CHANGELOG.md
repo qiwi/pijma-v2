@@ -1,3 +1,15 @@
+# @pijma/core [1.1.0](https://github.com/qiwi/pijma-v2/compare/@pijma/core@1.0.2...@pijma/core@1.1.0) (2020-05-24)
+
+
+### Features
+
+* add facade package ([86d312c](https://github.com/qiwi/pijma-v2/commit/86d312c9d30513eaae69a7a3498dded527a332da))
+
+
+### Performance Improvements
+
+* **package:** up deps, deps revision ([277f0a3](https://github.com/qiwi/pijma-v2/commit/277f0a31a03882e3d3039d606a598b7242c7aee6))
+
 ## @pijma/core [1.0.2](https://github.com/qiwi/pijma-v2/compare/@pijma/core@1.0.1...@pijma/core@1.0.2) (2019-11-04)
 
 
