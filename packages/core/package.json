@@ -67,7 +67,7 @@
     "@swissquote/crafty-preset-jest": "^1.11.1",
     "tslint-config-qiwi": "^1.5.0",
     "tslint": "^6.1.2",
-    "terser": "^4.8.0",
+    "terser": "^5.0.0",
     "microbundle": "^0.12.2"
   },
   "release": {
