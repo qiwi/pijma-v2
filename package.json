@@ -39,7 +39,7 @@
     "lerna": "^3.22.1",
     "lodash": "^4.17.15",
     "@qiwi/multi-semantic-release": "^3.0.3",
-    "semantic-release": "17.1.1",
+    "semantic-release": "17.2.3",
     "snazzy": "^8.0.0",
     "ts-jest": "^26.1.1",
     "typedoc": "^0.17.7",
