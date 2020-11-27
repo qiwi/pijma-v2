@@ -40,7 +40,7 @@
     "lodash": "^4.17.15",
     "@qiwi/multi-semantic-release": "^3.0.3",
     "semantic-release": "17.1.1",
-    "snazzy": "^8.0.0",
+    "snazzy": "^9.0.0",
     "ts-jest": "^26.1.1",
     "typedoc": "^0.17.7",
     "typescript": "^3.9.5",
